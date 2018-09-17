@@ -4,8 +4,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const logger = require('morgan');
 const app = express();
-const db = require('./db');
-const services = require('./services');
+const db = require('./src/db');
+const services = require('./src/services');
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
